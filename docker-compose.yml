@@ -1,0 +1,8 @@
+amqpbridge:
+    container_name: "amqpbridge"
+    image: einaeffchen/amqpbridge
+    restart: always
+    environment: 
+        POSTGRESQL_URI:
+        AMQP_URI:
+        BRIDGE_CHANNELS:
